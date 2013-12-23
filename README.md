@@ -16,3 +16,9 @@ If you do not already keep a serverside log of javascript exceptions that take p
 That is not surprising. It might clutter your log files though. I have seen browsers that trigger several exceptions per page load due to what I assume is badly written extensions or malware, and it would be nice to be able to silence that stuff.
 
 This blacklist can be used to filter your window.onerror logs. That is all.
+
+
+#### See also
+
+* http://blog.errorception.com/2012/03/tale-of-unfindable-js-error.html
+* https://gist.github.com/pamelafox/1878283
