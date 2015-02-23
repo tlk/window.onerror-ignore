@@ -1,14 +1,13 @@
 window.onerror-blacklist
 ========================
 
-Collection of javascript exceptions that are most likely created by badly written extensions, malware or other unknown sources.
+Collection of javascript exceptions that are most likely created by badly written extensions, malware or other unknown sources. The errors were collected using a window.onerror handler such as https://github.com/tlk/window.onerror
 
-The errors were collected using a window.onerror handler such as https://github.com/tlk/window.onerror
+The blacklist only contains errors that I concluded could not be caused by the site itself, and the data format is: ```"<exception>" line: <number> col: <number> <js-source-url> <user-agent>```
 
-It is my intention to restrict this blacklist to errors that are independent of the site(s) where they were found. As a consequence, web application specific errors are excluded. When in doubt, I don't add it.
 
-I haven't decided how to structure the findings, so for now the data format is: ```"<exception>" line: <number> col: <number> <js-source-url> <user-agent>```
-
+#### How do you know that it's safe to include in the blacklist and to ignore?
+I used this procedure: Let t1 and t2 be the start and end time of your log-files, then search all the javascript files that have been served from your site during that period. You can do `grep -r admwl .` in your (minified/compressed/uglify'ed) javascript directory to find any occurrences. It's easy when all versions of your (minified) js-files are stored in git or similar. If you find no occurrences of that string, then it should be safe to conclude that the error was triggered by something else than your code.
 
 #### Why is this useful
 If you do not already keep a serverside log of javascript exceptions that take place in your web applications, I can only recommend you to start doing that. You will most likely discover a few new things about your applications, and as a side effect you will also discover that really weird things happens in the real world browser environments out there.
