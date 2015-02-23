@@ -19,5 +19,6 @@ This blacklist can be used to filter your window.onerror logs. That is all.
 
 #### See also
 
+* https://github.com/tlk/window.onerror
 * http://blog.errorception.com/2012/03/tale-of-unfindable-js-error.html
 * https://gist.github.com/pamelafox/1878283
