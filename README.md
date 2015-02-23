@@ -3,7 +3,7 @@ window.onerror-blacklist
 
 Collection of javascript exceptions that are most likely created by badly written extensions, malware or other unknown sources. The errors were collected using a window.onerror handler such as https://github.com/tlk/window.onerror
 
-The blacklist only contains errors that I concluded could not be caused by the site itself, and the data format is: ```"<exception>" line: <number> col: <number> <js-source-url> <user-agent>```
+The [blacklist.txt](blacklist.txt) file only contains errors that I concluded could not be caused by the site itself, and the data format is: ```"<exception>" line: <number> col: <number> <js-source-url> <user-agent>```
 
 
 #### How do you know that it's safe to include in the blacklist and to ignore?
