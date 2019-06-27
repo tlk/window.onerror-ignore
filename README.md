@@ -3,7 +3,7 @@ window.onerror-ignore
 
 Collection of javascript exceptions that are most likely created by badly written extensions, malware or other unknown sources. The errors were collected from website log-files using a window.onerror handler similar to https://github.com/tlk/window.onerror
 
-I have filtered the errors, so the [ignore.txt](ignore.txt) file only contains errors that I concluded could not be caused by the site itself. The data format is: ```"<exception>" line: <number> col: <number> <js-source-url> <user-agent>```
+I have filtered the errors, such that the [ignore.txt](ignore.txt) file only contains errors that I concluded could not be caused by the site itself. The data format is: ```"<exception>" line: <number> col: <number> <js-source-url> <user-agent>```
 
 
 #### How do you know it is safe to ignore?
